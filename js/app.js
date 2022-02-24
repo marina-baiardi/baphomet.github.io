@@ -24,7 +24,7 @@ items.addEventListener('click', e => {
 
 const fetchData = async () => {
     try{
-        const res = await fetch('/js/api.json')
+        const res = await fetch('./js/api.json')
         const data = await res.json()
         //console.log(data)
         pintarCards(data)
@@ -46,8 +46,6 @@ const pintarCards = data => {
     });
     cards.appendChild(fragment)
 }
-
-
 
      
 
