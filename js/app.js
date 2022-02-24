@@ -47,22 +47,6 @@ const pintarCards = data => {
     cards.appendChild(fragment)
 }
 
-     
-
-function filtrarProductos(categoria) {
-     if (categoria==="Vino") {
-        $(`#${producto.type}`).css({"display":"flex"});
-        $(`#${producto.type}`).css({"display":"none"});
-    } else if (categoria==="Amplificador") {
-        $(".Bajo").css({"display":"none"});
-        $(".Amplificador").css({"display":"flex"});
-        $(".Accesorio").css({"display":"none"});
-    } else if (categoria==="Accesorio") {
-        $(".Bajo").css({"display":"none"});
-        $(".Amplificador").css({"display":"none"});
-        $(".Accesorio").css({"display":"flex"});
-    };
-};
 
 const addCarrito = e => {
 
